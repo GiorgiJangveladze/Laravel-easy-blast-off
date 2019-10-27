@@ -1,0 +1,19 @@
+{
+    "name": "EasyBlastoff/Easyblastoff",
+    "description": "This will create admin template and basic preinit of command engine",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GiorgiJangveladze",
+            "email": "giorgi.jangveladze1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "EasyBlastoff\\Easyblastoff\\": "src/"
+        }
+    }
+}

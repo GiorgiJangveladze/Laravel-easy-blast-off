@@ -2,10 +2,8 @@
  
 use Illuminate\Http\Request;
 
-Route::get('contact',function(){
-    return view('easyblastoff::contact'); 
-})->name('contact');
+Route::group(['namespace' => "EasyBlastoff\Easyblastoff\Http\Controllers"], function() {
+    Route::get('contact','ContactController@index')->name('contact');
 
-Route::post('contact',function(Request $request){
-    return $request->all(); 
+    Route::post('contact','ContactController@send');
 });
